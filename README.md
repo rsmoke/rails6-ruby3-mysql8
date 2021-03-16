@@ -1,4 +1,7 @@
 # README
+```docker-compose up```
+
+====================================
 
 ```docker-compose build app```
 
@@ -6,9 +9,6 @@
 
 ```rails s -b 0.0.0.0```
 
-```docker-compose up```
-
-```docker-compose up```
 
 This is a demo app for showcasing a Rails 5 application running on docker-compose in development and Kubernetes on GKE in production.
 
