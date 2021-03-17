@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='h-full'>
   <head>
     <title>App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,9 +15,9 @@
     </noscript>
 
   </head>
-  <body>
+  <body class='flex flex-col h-full'>
     <%= render 'layouts/header' %>
-    <main class="container mx-auto px-2">
+    <main class="flex-1 mx-auto px-2">
       <%= render 'layouts/notification' %>
       <%= yield %>
     </main>
