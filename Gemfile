@@ -5,6 +5,7 @@ ruby '3.0.0'
 gem 'rails', '~> 6.1.3'
 
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'devise'
 gem 'jbuilder', '~> 2.7'
 gem 'mysql2', '~> 0.5'
 gem 'puma', '~> 5.0'
