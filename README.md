@@ -22,9 +22,13 @@ Read Part II: Rails on Kubernetes here
 *run ```docker-compose build app```
 *run ```docker-compose run --rm --service-ports app bash```
 *in shell run ```bundle```
+*in shell run ```bin/rails db:migrate```
 *in shell run ```rails s -b 0.0.0.0``` to test
 *then exit shell [ctrl]C
 *run ```docker-compose down```
 *run ```docker-compose up```
 
+---------------
 
+#configuartions
+*set noscript support info
