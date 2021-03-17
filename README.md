@@ -32,3 +32,7 @@ Read Part II: Rails on Kubernetes here
 
 #configuartions
 *set noscript support info
+
+
+-----------
+tailwindsCSS is in compatablity mode. After things are updated across the ecosystem update the npm module https://tailwindcss.com/docs/installation#post-css-7-compatibility-build
