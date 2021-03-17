@@ -28,7 +28,7 @@
             </li>
           </ul>
         <% else %>
-          <%= link_to root_path do  %>
+          <%= link_to new_admin_session_path do  %>
             <%= render :partial => 'svg/closed_padlock' %>
             <span class='pr-4'>Admin Sign_in</span>
           <% end %>
