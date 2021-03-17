@@ -9,6 +9,8 @@ volumes:
     driver: local
   node-modules:
     driver: local
+  redis:
+    driver: local
 
 services:
   app:
@@ -43,6 +45,7 @@ services:
       - "3000:3000"
     links:
       - mysql
+      - webpacker
 
   mysql:
     image: mysql:8.0.21
@@ -55,3 +58,21 @@ services:
       - "3306:3306"
     volumes:
       - mysql:/var/lib/mysql
+
+  redis:
+    image: redis:4.0.14-alpine
+    mem_limit: 64m
+    volumes:
+      - redis:/data:delegated
+    ports:
+      - "6379:6379"
+    restart: on-failure
+    logging:
+      driver: none
+
+  webpacker:
+    image: "my-app:1.0"
+    mem_limit: 256m
+    command: ./bin/webpack-dev-server
+    ports:
+      - 3035:3035
